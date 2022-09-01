@@ -1,0 +1,75 @@
+.sidebar{
+    flex: 1;
+    border-right: 0.5px solid rgb(234, 234, 234);
+    min-height: 100vh;
+    background-color: rgb(43, 43, 43);
+    .top{
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .logo{
+            font-size: 20px;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+        }
+    }
+    hr{
+        height: 0;
+        border: 0.5px solid rgb(0, 0, 0);
+    }
+    .center{
+        padding-left: 10px;
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            color: rgb(255, 255, 255);
+            .title{
+                font-size: 10px;
+                font-weight: bold;
+                margin-top: 15px;
+                margin-bottom: 5px;
+                color: rgb(165, 165, 165);
+            }
+            li{
+                display: flex;
+                align-items: center;
+                padding: 5px;
+                &:hover{
+                    background-color: gainsboro;
+                }
+                .icon{
+                    font-size: 14px;
+                    color: rgb(255, 255, 255);
+                }
+                span{
+                    font-size: 14px;
+                    margin-left: 10px;
+                    color: gray;
+                }
+            }
+        }
+    }
+    .bottom{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        .colorOption{
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+            border: 1px solid rgb(0, 0, 0);
+            cursor: pointer;
+            margin: 5px;
+
+            &:nth-child(1){
+                background-color: rgb(255, 255, 255);
+            }
+            &:nth-child(2){
+                background-color: rgb(88, 88, 88);
+            }
+           
+        }
+    }
+}
